@@ -237,7 +237,8 @@ body{
     letter-spacing: -0.5px;
     color: #2B292D;
     font-weight: bold;
-    margin-bottom: 30px;
+    width: 550px;
+    margin: 30px auto;
 }
 
 .early_text{
@@ -270,21 +271,29 @@ body{
     gap: 30px;
 }
 
-.item_img_understand > button{
+.item_img_understand{
     border: none;
     border-radius: 10px;
-    width: 262px;
-    height: 300px;
     background: #FFFFFF;
+    padding: 22px 25px 33px 25px;
+}
+
+.item_img_understand > div{
+    width: 212px;
+    height: 245px;
+    align-items: center;
+    text-align: center;
+}
+
+.understand-img-text{
     font-weight: bold;
     font-size: 22px;
     line-height: 28px;
     color: #2B292D;
-    text-align: center;
-    padding: 0 50px 0 50px;
+    margin-top: 22px;
 }
 
-.item_img_understand > button:hover{
+.item_img_understand:hover{
     background: purple;
     color: #FFFFFF;
     transition: 1s;
@@ -415,7 +424,7 @@ body{
 
     .info-flex{
         display: grid;
-        grid-area: 
+        grid-template-areas:
         "one"
         "two"
         "three";
@@ -445,11 +454,19 @@ body{
     .wrapper_understand{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
+        column-gap: 64px;
+        row-gap: 34px;
+        width: 588px;
+        margin: 0 auto;
     }
 
-    .item_img_understand{
+    .item_img_understand > div{
+        width: 212px;
+        height: 245px;
+        align-items: center;
         text-align: center;
     }
+
 
 
     .grid-container{
@@ -466,4 +483,139 @@ body{
         display: none;
     }
 
+}
+
+
+
+
+@media(max-width: 420px){
+    
+    .container{
+        max-width: 320px;
+    }
+
+    .what_is_it_about-container > div{
+        max-width: 290px;
+    }
+
+
+    .logo_brend-container > img{
+        width: 107px;
+        height: 94px;
+    }
+
+
+    .busy-flex{
+        
+    }
+
+    .busy-text{
+        text-align: left;
+    }
+
+    
+
+
+    .info-flex{
+        display: grid;
+        grid-template-areas:
+        "one"
+        "two"
+        "three";
+        justify-content: center;
+        text-align: left;
+        max-width: 290px;
+    }
+
+    .info-flex > div:nth-child(1){
+        grid-area: one;
+        display: block;
+        margin-bottom: 30px;
+    }
+    .info-flex > div:nth-child(2){
+        grid-area: two;
+        display: block;
+        margin-bottom: 30px;
+    }
+    .info-flex > div:nth-child(3){
+        grid-area: three;
+        display: block;
+    }
+
+
+    .engage{
+        margin-bottom: -20px;
+    }
+
+    .understand{
+        width: 300px;
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .early_text{
+        width: 300px;
+    }
+
+    .button_understand{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .button_understand > .button:nth-child(1){
+        margin-bottom: 10px;
+    }
+    
+    .wrapper_understand{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        row-gap: 15px;
+        max-width: 262px;
+    }
+
+
+
+
+    .grid-container{
+        display: grid;
+        grid-template-areas: 
+        "one"
+        "four"
+        "three"
+        "five"
+        "six";
+        gap: 17px;
+    }
+    
+    .grid-container > img:nth-child(1){
+        grid-area: one;
+    }
+    
+    .grid-container > img:nth-child(2){
+        grid-area: two;
+        display: none;
+    }
+    
+    .grid-container > img:nth-child(3){
+        grid-area: three;
+    }
+    
+    .grid-container > img:nth-child(4){
+        grid-area: four;
+    }
+    
+    .grid-container > img:nth-child(5){
+        grid-area: five;
+    }
+    
+    .grid-container > img:nth-child(6){
+        grid-area: six;
+    }
+    
+    .grid-container > img:nth-child(7){
+        grid-area: seven;
+        display: none;
+    }
+    
+    
 }
