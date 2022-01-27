@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/modal.css">
+    <link rel="stylesheet" href="./wow/animate.css">
     <title>Diplom Project</title>
 </head>
 <body>
@@ -28,26 +30,59 @@
                 </div>
             </div>
             <nav class="header-nav">
-                <ul>
-                    <li class="header-li">
-                        <a href="">
-                            Home
-                        </a>
-                    </li>
-                    <li class="header-li">
-                        <a href="">
-                            Stories
-                        </a>
-                    </li>
-                </ul>
-                <div>
-                    <button class="button">
-                        Get Started
-                    </button>
+                <input class="checkbox" checked type="checkbox">
+                <div class="check-wrapper">
+                    <div class="checke"></div>
+                    <div class="checke"></div>
+                    <div class="checke"></div>
                 </div>
+                <div class="header-nav-menu">
+                    <ul class="header-nav-menu-ul">
+                        <li class="header-li">
+                            <a href="">
+                                Home
+                            </a>
+                        </li>
+                        <li class="header-li">
+                            <a href="">
+                                Stories
+                            </a>
+                        </li>
+                    </ul>
+                    <div>
+                        <button id="modal-button" class="button">
+                            Get Started
+                        </button>
+                    </div>
+                </div>    
             </nav>
         </div>
     </header>
+
+    <section class="header">
+        <div class="container header-wraper">
+            <div>
+                <h1 class="title">
+                    Build stunning websites & apps.
+                </h1>
+                <p class="header-text">
+                    Create live segments and target the right people for messages based on their behaviors.
+                </p>
+                <div class="button-container"> 
+                    <button class="button">
+                        Get Started
+                    </button>
+                    <button class="button">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+            <div>
+                <img src="./img/header/ouch.svg" alt="">
+            </div>
+        </div>
+    </section>
+
     <section class="what_is_it_about">
         <div class="container what_is_it_about-container">
             <div>
@@ -90,12 +125,12 @@
 <section class="manage">
     <div class="container manage-container">
         <div>
-            <img src="./img/manage/ouch.png" alt="">
+            <img class="manage-img" src="./img/manage/ouch.png" alt="">
         </div>
         <div>
             <div class="manage-container-text">
                 <div>
-                    <h4 class="manage-title">
+                    <h4 class="manage-title wow tada">
                         Manage conversations
                     </h4>
                     <p class="manage-text">
@@ -253,7 +288,7 @@
         </section>
     </section>
 
-    <footer>
+    <footer class="footer-paralax">
         <div class="container footer-info">
             <div>
                 <div class="footer-info-logo">
@@ -351,6 +386,38 @@
                 </div>
         </div>
     </footer>
+
+    <div class="modal-overlay">
+        <div class="modal">
+            <div class="modal-content">
+                <div>
+                    <img src="./img/All_Surfaces_Covered/apple.svg" alt="">
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi laboriosam unde accusantium nulla adipisci eius.
+                </p>
+            </div>
+            <p class="close">
+                x
+            </p>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src=“./wow.js”></script>
+
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+    
+
+    <script src="./script/script.js"></script>
+    <script src="./wow/wow.min.js"></script>
+    <script>
+              new WOW().init();
+    </script>
+
+    <script src="./script/modal.js"></script>
+    
            
 </body>
 </html>
