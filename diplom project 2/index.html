@@ -7,13 +7,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" />
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/modal.css">
     <link rel="stylesheet" href="./wow/animate.css">
     <title>Diplom Project</title>
 </head>
 <body style="overflow-x: hidden;">
+
     <header class="header header-sticky">
         <div class="container header-container">
             <div class="logo">
@@ -30,7 +34,7 @@
                 </div>
             </div>
             <nav class="header-nav">
-                <input class="checkbox" checked type="checkbox">
+                <input class="checkbox" type="checkbox">
                 <div class="check-wrapper">
                     <div class="checke"></div>
                     <div class="checke"></div>
@@ -39,7 +43,7 @@
                 <div class="header-nav-menu">
                     <ul class="header-nav-menu-ul">
                         <li class="header-li">
-                            <a href="">
+                            <a id="home" href="">
                                 Home
                             </a>
                         </li>
@@ -50,7 +54,7 @@
                         </li>
                     </ul>
                     <div>
-                        <button id="modal-button" class="button">
+                        <button class="button">
                             Get Started
                         </button>
                     </div>
@@ -72,7 +76,7 @@
                     <button class="button">
                         Get Started
                     </button>
-                    <button class="button">
+                    <button id="modal-button" class="button">
                         Learn More
                     </button>
                 </div>
@@ -189,6 +193,9 @@
                         Everything you need to start building – including open-source code, documentation.
                     </p>  
                 </div>
+                <div class="easily_find-sait_img_too">
+                    <img src="./img/features/sait.svg" alt="">
+                </div>
 
             </div>
         </div>
@@ -219,7 +226,7 @@
                         </p>
                         <div class="manage-fase-text">
                             
-                            <img class="manage-fase-text_img" src="./img/manage/Profile Image.svg" alt="">
+                            <img class="manage-fase-text_img" src="./img/manage/profile_Image.svg" alt="">
                             <h6 class="manage-fase-text_text">
                                 <span>Viella Malkovich</span><br>Creative Director at Johnson
                             </h6>
@@ -292,34 +299,81 @@
             <div class="wrapper_understand">
                 <div class="item_img_understand">
                     <div>
-                        <img src="./img/Understand_your_audience/Developers.svg" alt="">
+                        <img src="./img/understand_your_audience/developers.svg" alt="">
                         <p class="understand-img-text">Developers</p> 
                     </div>
                 </div>
                 <div class="item_img_understand">
                     <div>
-                        <img src="./img/Understand_your_audience/Entertainment.svg" alt="">
+                        <img src="./img/understand_your_audience/entertainment.svg" alt="">
                         <p class="understand-img-text">Entertainment</p>    
                     </div>
                 </div>
                 <div class="item_img_understand">
                     <div>
-                        <img src="./img/Understand_your_audience/Athletes.svg" alt="">
+                        <img src="./img/understand_your_audience/athletes.svg" alt="">
                         <p class="understand-img-text">Athletes</p>    
                     </div>
                 </div>
                 <div class="item_img_understand">
                     <div>
-                        <img src="./img/Understand_your_audience/Creators.svg" alt="">
+                        <img src="./img/understand_your_audience/creators.svg" alt="">
                         <p class="understand-img-text">Creators</p>    
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
+    <section class="logo_brend">
+        <div class="container logo_brend-container">
+                <img src="./img/what_is_it_about/logo.TNYT.svg" alt="TNYT">
+                <img src="./img/what_is_it_about/logo.forbes.svg" alt="Forbes">
+                <img src="./img/what_is_it_about/logo.apple.svg" alt="Apple">
+                <img src="./img/what_is_it_about/logo.mashable.svg" alt="Mashable">
+                <img src="./img/what_is_it_about/logo.wsj.svg" alt="WSJ">
+                <img src="./img/what_is_it_about/logo.google.svg" alt="Google">
+        </div>
+    </section>
     
-    <section class="about">
+    <section class="businesses_section">
+        <div class="container businesses-container">
+                <div class="businesses_info">
+                    <p class="text-mini text-mini__blue">Trusted by the world’s most innovative businesses – big and small</p>
+                    <p class="text-inner ">“Comprehensive set of startup tools for all imaginable entrepreneurial needs. Create landing pages, send emails, find freelancers. Perfect for sales, marketing, and support”</p>
+                </div>
+                <div class="carusel">
+                    <div>
+                        <p class="carusel-title">
+                            Viella Malkovich
+                        </p>
+                        <p class="carusel-text">
+                            Creative Director at Johnson
+                        </p>
+                    </div>
+                    <div>
+                        <p class="carusel-title">
+                            Viella Malkovich
+                        </p>
+                        <p class="carusel-text">
+                            Creative Director at Johnson
+                        </p>
+                    </div>
+                    <div>
+                        <p class="carusel-title">
+                            Viella Malkovich
+                        </p>
+                        <p class="carusel-text">
+                            Creative Director at Johnson
+                        </p>
+                    </div>
+                </div>
+        </div>
+        <div class="businesses_img">
+            <img src="./img/businesses/ouch.svg" alt="">
+        </div>
+    </section>
+    
+    <section id="about" class="about">
         <section class="container">
             <div class="about-item_container">
                 <div class="about-items_text">
@@ -387,13 +441,13 @@
     </section> 
     <section class="grid">
         <section class="container grid-container">
-            <img src="./img/All_Surfaces_Covered/apple.svg" alt="">
-            <img src="./img/All_Surfaces_Covered/bus.svg" alt="">
-            <img src="./img/All_Surfaces_Covered/man.png" alt="">
-            <img src="./img/All_Surfaces_Covered/hand.svg" alt="">
-            <img src="./img/All_Surfaces_Covered/mobil.svg" alt="">
-            <img src="./img/All_Surfaces_Covered/child.svg" alt="">
-            <img src="./img/All_Surfaces_Covered/dog.svg" alt="">
+            <img src="./img/all_Surfaces_Covered/apple.svg" alt="">
+            <img src="./img/all_Surfaces_Covered/bus.svg" alt="">
+            <img src="./img/all_Surfaces_Covered/man.png" alt="">
+            <img src="./img/all_Surfaces_Covered/hand.svg" alt="">
+            <img src="./img/all_Surfaces_Covered/mobil.svg" alt="">
+            <img src="./img/all_Surfaces_Covered/child.svg" alt="">
+            <img src="./img/all_Surfaces_Covered/dog.svg" alt="">
         </section>
     </section>
 
@@ -440,10 +494,10 @@
                 </p>
                 <div class="footer-black-link">
                     <a href="">
-                        <img src="./img/footer-img/AppStore.svg" alt="">
+                        <img src="./img/footer-img/appStore.svg" alt="">
                     </a>
                     <a href="">
-                        <img src="./img/footer-img/GooglePlay.svg" alt="">
+                        <img src="./img/footer-img/googlePlay.svg" alt="">
                     </a>
                 </div>              
             </div>
@@ -513,7 +567,7 @@
                 <div class="icon-bottom">
                     <img src="./img/footer-img/icon-twitter.svg" alt="">
                     <img src=".//img/footer-img/icon-fb.svg" alt="">
-                    <img src="./img/footer-img/LinkedIn.svg" alt="">
+                    <img src="./img/footer-img/linkedIn.svg" alt="">
                 </div>
         </div>
     </footer>
@@ -522,7 +576,7 @@
         <div class="modal">
             <div class="modal-content">
                 <div>
-                    <img src="./img/All_Surfaces_Covered/apple.svg" alt="">
+                    <img src="./img/all_Surfaces_Covered/apple.svg" alt="">
                 </div>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi laboriosam unde accusantium nulla adipisci eius.
@@ -533,11 +587,14 @@
             </p>
         </div>
     </div>
+    <div id="up">
+        <i class="fas fa-chevron-up"></i>
+    </div>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src=“./wow.js”></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
     
 

@@ -244,6 +244,10 @@ body{
     right: 0;
 }
 
+.easily_find-sait_img_too{
+    display: none;
+}
+
 .easily_find-container{
     flex: auto;
 }
@@ -533,6 +537,67 @@ body{
 
 
 
+.businesses_section{
+    position: relative;
+    padding: 40px 0;
+}
+
+.businesses_info{
+    text-align: center;
+}
+
+.businesses_info > p:last-child{
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.businesses_img{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0%, -50%);
+}
+
+.carusel{
+    text-align: center;
+    margin-top: 34px;
+}
+
+.slick-dotted.slick-slider{
+    margin-bottom: 60px;
+}
+
+.carusel-title{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2B292D;
+}
+
+.carusel-text{
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(43, 41, 45, 0.6);
+}
+
+.slick-dots{
+    margin-top: 38px;
+    position: static;
+}
+
+.slick-dots li button:before{
+    font-size: 16px;
+    color: #da365f;
+    opacity: 1;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: #3142C5;
+}
+
+
+
 
 .about-item_container{
     max-width: 750px;
@@ -804,6 +869,20 @@ body{
     display: none;
 }
 
+#up{
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    background: pink;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+#up > i{
+    color: white;
+}
+
 
 
 
@@ -927,6 +1006,41 @@ body{
     
 
 
+
+    .easily_find-sait_img{
+        display: none;
+    }
+
+    .easily_find-sait_img_too{
+        display: block;
+        margin-top: 65px;
+        text-align: center;
+    }
+
+    .easily_find-eyes_img{
+        top: 25%;
+    }
+
+    .easily_find-text-box > div:first-child{
+        text-align: center;
+    }
+
+    .easily_find-items{
+        max-width: 430px;
+        margin: 0 auto;
+    }
+
+
+
+    .manage-title, .manage-text{
+        margin: 0 auto;
+    }
+
+    .manage-title{
+        margin-bottom: 12px;
+    }
+
+
     .manage-container{
         flex-direction: column-reverse;
         text-align: center;
@@ -1015,6 +1129,24 @@ body{
         width: 212px;
         height: 245px;
         align-items: center;
+        text-align: center;
+    }
+
+
+
+    .businesses_info > p:first-child{
+        max-width: 520px;
+        margin: 0 auto;
+        margin-bottom: 14px;
+    }
+
+    .businesses_info > p:last-child{
+        max-width: 600px;
+    }
+
+    .businesses_img {
+        position: static;
+        transform: translate(0%, 0%);
         text-align: center;
     }
 
@@ -1177,6 +1309,33 @@ body{
 
 
 
+    .easily_find-eyes_img{
+        display: none;
+    }
+
+    .easily_find-text-box > div:first-child{
+        margin-bottom: 30px;
+    }
+
+    .easily_find-sait_img_too img{
+        width: 290px;
+        height: 240px;
+    }
+
+    .easily_find-sait_img_too{
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    .easily_find-items > p{
+        height: 84px;
+    }
+
+
+
+
+
+
     .manage-container{
         flex-direction: column;
     }
@@ -1272,6 +1431,25 @@ body{
         max-width: 262px;
     }
 
+
+
+    .businesses_info > p{
+        text-align: start;
+    }
+
+    .businesses_info > p:first-child{
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .businesses_info > p:last-child{
+        font-size: 24px;
+        line-height: 34px;
+    }
+
+    .slick-list{
+        text-align: start;
+    }
 
 
 
